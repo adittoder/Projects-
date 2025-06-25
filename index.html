@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitLounge - Your Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+     		<a href="index.html" class="logo-link">
+       		 <img src="images/Litlogo.png" alt="LitLounge Logo" class="logo-img">
+    		</a>
+		</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Your Next Great Read</h2>
+            <p>Explore thousands of books in our digital library</p>
+            <a href="store.html" class="cta-button">Browse Books</a>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Browse by Category</h2>
+        <div class="category-container">
+            <a href="store.html#fiction" class="category-card">
+                <div class="category-icon"><i class="fas fa-book"></i></div>
+                <h3>Fiction</h3>
+                <p>Novels, Short Stories, Fantasy, Sci-Fi</p>
+            </a>
+            <a href="store.html#non-fiction" class="category-card">
+                <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Non-Fiction</h3>
+                <p>Biography, History, Science, Self-Help</p>
+            </a>
+            <a href="store.html#children" class="category-card">
+                <div class="category-icon"><i class="fas fa-child"></i></div>
+                <h3>Children's Books</h3>
+                <p>Picture Books, Middle Grade, Young Adult</p>
+            </a>
+            <a href="store.html#bestsellers" class="category-card">
+                <div class="category-icon"><i class="fas fa-star"></i></div>
+                <h3>Bestsellers</h3>
+                <p>Top Picks and Popular Reads</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Books</h2>
+        <div class="book-slider">
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x220" alt="Book Cover">
+                <h3>The Silent Echo</h3>
+                <p>Jane Austen</p>
+                <a href="store.html" class="view-btn">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x220" alt="Book Cover">
+                <h3>Midnight Chronicles</h3>
+                <p>John Smith</p>
+                <a href="store.html" class="view-btn">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x220" alt="Book Cover">
+                <h3>The Lost City</h3>
+                <p>Emily Johnson</p>
+                <a href="store.html" class="view-btn">View Details</a>
+            </div>
+            <div class="book-card">
+                <img src="https://via.placeholder.com/150x220" alt="Book Cover">
+                <h3>Beyond the Horizon</h3>
+                <p>Michael Brown</p>
+                <a href="store.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join Our Newsletter</h2>
+            <p>Stay updated with the latest books and exclusive offers</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LitLounge</h3>
+                <p>Your digital library for discovering great books and connecting with fellow readers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="subscription.html">Subscription</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@litlounge.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LitLounge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.querySelector('.burger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.burger').classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
